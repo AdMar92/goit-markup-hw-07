@@ -94,12 +94,6 @@ body {
   .header-floor {
     border-bottom: 1px solid #e7e9fc;
   }
-
-  .header-style {
-    display: flex;
-    justify-content: space-around;
-    margin-left: 20px;
-  }
   .web-color {
     color: var(--iris, #4d5ae5);
   }
@@ -116,6 +110,10 @@ body {
     margin-right: 76px;
   }
 
+  .floor-wrapper {
+    display: flex;
+    align-items: center;
+  }
   .floor {
     display: flex;
     align-items: center;
