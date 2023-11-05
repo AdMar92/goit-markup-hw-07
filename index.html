@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homework7-Main Stage</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,7 +19,7 @@
     <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
-    <header Class="header-floor">
+    <header Class="header-floor page-header">
       <div class="container floor-wrapper">
         <nav Class="floor">
           <a class="logo-link flex-logo" href="./index.html">
@@ -33,6 +34,27 @@
             </li>
             <li><a class="menu-style" href="#">Contacts</a></li>
           </ul>
+          <div class="container">
+            <button
+              class="menu-toggle js-open-menu"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
+            >
+              <svg
+                width="24"
+                height="24"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="./images/icons.svg#icon-charm-menu-hamburger"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+          </div>
         </nav>
         <address class="address-margin">
           <ul class="menu-link flex-address">
@@ -609,6 +631,104 @@
         </div>
       </div>
     </footer>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="./images/icons.svg#icon-charm-menu-hamburger"
+          width="24"
+          height="24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li>
+          <a class="menu-mobile-style" href="./index.html">Studio</a>
+        </li>
+        <li>
+          <a class="menu-mobile-style" href="./portfolio.html">Portfolio</a>
+        </li>
+        <li><a class="menu-mobile-style" href="#">Contacts</a></li>
+      </ul>
+      <address>
+        <ul class="contact-mobile-menu">
+          <li>
+            <a href="tel:+11(000)111-11-11" class="contact-mobile-style"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+          <li>
+            <a href="mailto:info@devstudio.com" class="contact-mobile-style"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+      </address>
+      <ul class="mobile-icons-position">
+        <li>
+          <a href="https://www.instagram.com/" class="icons-item-mobile">
+            <svg class="logo-icons">
+              <use
+                class="logo-size"
+                href="/goit-markup-hw-06/images/icons.svg#icon-instagram-2"
+              >
+                intagram
+              </use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.twitter.com/" class="icons-item-mobile">
+            <svg class="logo-icons">
+              <use
+                class="logo-size"
+                href="/goit-markup-hw-06/images/icons.svg#icon-twitter-1"
+              >
+                twitter
+              </use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/" class="icons-item-mobile">
+            <svg class="logo-icons">
+              <use
+                class="logo-size"
+                href="/goit-markup-hw-06/images/icons.svg#icon-facebook-1"
+              >
+                facebook
+              </use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/" class="icons-item-mobile">
+            <svg class="logo-icons">
+              <use
+                class="logo-size"
+                href="/goit-markup-hw-06/images/icons.svg#icon-linkedin-1"
+              >
+                linkedin
+              </use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
