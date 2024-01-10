@@ -34,15 +34,6 @@ body {
   background-color: var(--WHITE);
   margin: 0 auto;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
-}
 
 img {
   display: block;
@@ -124,6 +115,17 @@ ul {
   margin-right: auto;
 }
 
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+  }
+}
 .flex-header {
   display: flex;
 }
@@ -248,7 +250,9 @@ ul {
 }
 
 /* ----------------SEKCJA 2-------------------------- */
-
+.section-two {
+  padding: 120px 0;
+}
 .flex-list {
   display: flex;
   gap: 24px;
@@ -834,44 +838,6 @@ ul {
   .address-position {
     display: none;
   }
-
-  .section-two {
-    padding: 96px 0;
-  }
-  .container {
-    max-width: 768px;
-  }
-  /* ----------------SEKCJA 2-------------------------- */
-
-  .flex-list {
-    display: flex;
-    gap: 72px;
-    flex-wrap: wrap;
-  }
-  .atuts-box {
-    display: flex;
-    border-radius: 4px;
-    background: var(--CLOUD, #f4f4fd);
-    margin-bottom: 8px;
-    align-items: center;
-    justify-content: center;
-    height: 112px;
-  }
-
-  .service-item {
-    width: 100%;
-  }
-  .header-small-text {
-    font-size: 36px;
-    font-weight: 700;
-    text-align: center;
-  }
-  .small-text {
-    font-weight: 500;
-  }
-
-  /* ----------------SEKCJA 3-------------------------- */
-
   .menu-toggle {
     min-height: 40px;
     min-width: 40px;
@@ -898,14 +864,11 @@ ul {
     left: 0;
     width: 100vw;
     height: 100%;
-    padding: 40px;
-    padding-top: 80px;
+    padding: 32px;
     background-color: var(--modal-background);
     z-index: 999;
     transform: translateX(100%);
     transition: transform 250ms ease-in-out;
-    display: flex;
-    flex-direction: column;
   }
   .menu-container.is-open {
     transform: translateX(0);
@@ -932,7 +895,8 @@ ul {
     display: flex;
     flex-direction: column;
     gap: 40px;
-    margin-bottom: auto;
+    margin-top: 80px;
+    margin-bottom: 284px;
   }
   .menu-mobile-link {
     color: var(--NAVY-BLUE);
@@ -959,7 +923,6 @@ ul {
 
   .contact-mobile-style {
     color: var(--SLATE);
-    font-style: normal;
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
@@ -990,7 +953,7 @@ ul {
   }
   .mobile-icons-position {
     display: flex;
-    gap: 30px;
+    gap: 56px;
   }
 
   .icons-item-mobile {
@@ -1029,15 +992,6 @@ ul {
 }
 /* ================================================= NOT DESKTOP 👇 ========================================= */
 @media screen and (max-width: 1157px) {
-  .section-three {
-    display: none;
-  }
-  .atuts-box {
-    display: none;
-  }
-  .container {
-    max-width: 428px;
-  }
 }
 /* ================================================= DESKTOP 👇 ========================================= */
 @media screen and (min-width: 1158px) {
@@ -1046,8 +1000,5 @@ ul {
   }
   .menu-container {
     display: none;
-  }
-  .container {
-    max-width: 1158px;
   }
 }
