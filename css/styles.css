@@ -901,6 +901,7 @@ ul {
     display: flex;
     gap: 72px;
     flex-wrap: wrap;
+    margin: 67px;
   }
   .team-icon-link {
     width: 100%;
