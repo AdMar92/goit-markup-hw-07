@@ -838,6 +838,10 @@ ul {
   .address-position {
     display: none;
   }
+  .menu-wrapper {
+    width: 100%;
+    justify-content: space-between;
+  }
 
   .section-two {
     padding: 96px 0;
@@ -872,6 +876,10 @@ ul {
   }
   .team-list {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .flex-team {
@@ -882,10 +890,7 @@ ul {
     text-align: center;
   }
   .team-icons-flex {
-    display: flex;
     justify-content: center;
-    gap: 24px;
-    padding-top: 8px;
   }
   .team-icon {
     width: 40px;
@@ -923,9 +928,6 @@ ul {
     outline: none;
   }
   .icon-features {
-    position: absolute;
-    top: -1;
-    right: 0;
     margin-right: 16px;
   }
   .menu-container {
@@ -1026,7 +1028,7 @@ ul {
   }
   .mobile-icons-position {
     display: flex;
-    gap: 30px;
+    gap: 56px;
   }
 
   .icons-item-mobile {
