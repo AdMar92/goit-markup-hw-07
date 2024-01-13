@@ -249,9 +249,10 @@ ul {
 
 /* ----------------SEKCJA 2-------------------------- */
 
-.flex-list {
+.flex-list-two {
   display: flex;
   gap: 24px;
+  padding: 120px;
 }
 .atuts-box {
   display: flex;
@@ -272,6 +273,10 @@ ul {
   padding-bottom: 120px;
 }
 .flex-list-team {
+  display: flex;
+  gap: 24px;
+}
+.flex-list {
   display: flex;
   gap: 24px;
 }
