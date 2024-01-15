@@ -325,6 +325,7 @@ ul {
 
   .name-position {
     text-align: center;
+    padding: 8px;
   }
   .team-icons-flex {
     display: flex;
