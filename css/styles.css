@@ -884,6 +884,7 @@ ul {
 
   .name-position {
     text-align: center;
+    margin-bottom: 8px;
   }
   .team-icons-flex {
     justify-content: center;
@@ -1444,20 +1445,8 @@ ul {
     justify-content: center;
     gap: 24px;
   }
-  .team-icon {
-    width: 40px;
-    height: 40px;
-    gap: 24px;
-  }
 
-  .team-svg {
-    fill: var(--CLOUD);
-  }
   /*---------------SEKCJA 5----------------------*/
-  .section-five {
-    padding-top: 120px;
-    padding-bottom: 120px;
-  }
 
   .customers-flex {
     display: flex;
