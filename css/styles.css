@@ -71,19 +71,7 @@ ul {
   }
 
   .header-floor {
-    padding: 5px 0;
-  }
-}
-@media screen and (min-width: 320px) {
-  .title-style {
-    color: var(--WHITE);
-    text-align: center;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 1.11;
-    letter-spacing: 0.72px;
-    padding-bottom: 72px;
+    padding: 10px 0;
   }
 }
 
@@ -161,6 +149,16 @@ ul {
     align-items: center;
   }
 
+  .title-style {
+    color: var(--WHITE);
+    text-align: center;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.72px;
+    padding-bottom: 72px;
+  }
   .address-style {
     font-style: normal;
   }
@@ -499,11 +497,6 @@ ul {
     color: var(--CLOUD);
   }
 
-  .footer-position {
-    display: flex;
-    align-items: baseline;
-  }
-
   .footer-background {
     background: var(--GREY);
     padding: 100px 0;
@@ -523,7 +516,8 @@ ul {
     text-transform: uppercase;
     text-decoration: none;
     margin-bottom: 16px;
-    display: inline-block;
+    display: block;
+    text-align: center;
   }
 
   .footer-text {
@@ -532,11 +526,13 @@ ul {
     line-height: 1.5;
     letter-spacing: 0.32px;
     max-width: 264px;
+    margin: 0 auto;
   }
 
   .footer-social-lists {
     display: flex;
     gap: 16px;
+    justify-content: center;
   }
 
   .social-text {
@@ -546,13 +542,9 @@ ul {
     letter-spacing: 0.32px;
     margin-bottom: 16px;
   }
-  .subscribe-form {
-    display: flex;
-    gap: 24px;
-  }
-
   .subscribe-label {
-    display: flex;
+    display: block;
+    margin-bottom: 16px;
   }
 
   .email-input {
@@ -883,7 +875,6 @@ ul {
   /* ----------------SEKCJA 4-------------------------- */
   .section-four {
     padding: 120px 0;
-    background-color: var(--CLOUD);
   }
   .team-list {
     width: 264px;
@@ -913,7 +904,6 @@ ul {
   .team-icon-link {
     width: 100%;
     height: 100%;
-    background-color: var(--IRIS);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -934,14 +924,9 @@ ul {
     height: 88px;
   }
   /* ----------------FOOTER-------------------------- */
-  .footer-position {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
+
   .footer-logo-position {
     margin: auto;
-    text-align: center;
   }
   .footer-social {
     padding: 72px 0;
@@ -961,7 +946,7 @@ ul {
     flex-direction: column;
   }
   .email-input {
-    width: 398px;
+    width: 100%;
     height: 40px;
   }
   .btn-subscribe {
@@ -1141,6 +1126,14 @@ ul {
     padding-bottom: 48px;
   }
 
+  .address-item {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.16;
+    letter-spacing: 0.48px;
+  }
+
   /* ========================  SEKCJA 2  =========================*/
   .section-two {
     padding: 96px 0;
@@ -1209,7 +1202,7 @@ ul {
   }
   .customers-flex {
     display: flex;
-    gap: 24px;
+    gap: 72px 24px;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
@@ -1221,6 +1214,7 @@ ul {
     margin: auto;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
   }
 
   .subscribe-label {
@@ -1231,7 +1225,7 @@ ul {
   .footer-position {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 72px 24px;
     max-width: 530px;
   }
 
@@ -1272,7 +1266,6 @@ ul {
     padding: 24px 0;
   }
   .title-style {
-    color: var(--WHITE);
     text-align: center;
     font-size: 56px;
     font-weight: 700;
@@ -1283,6 +1276,14 @@ ul {
     padding-bottom: 48px;
   }
 
+  .address-item {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+  }
+
   .section-two {
     padding: 120px;
   }
@@ -1291,7 +1292,7 @@ ul {
     gap: 24px;
   }
   .service-item {
-    width: calc((100% - 72px) / 4);
+    max-width: 356px;
   }
 
   .atuts-box {
@@ -1304,33 +1305,10 @@ ul {
     height: 112px;
   }
   .menu-item {
-    color: var(--NAVY-BLUE);
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
     padding: 24px 0;
-  }
-
-  .menu-border {
-    color: var(--OCEAN);
-    position: relative;
-    transition: var(--transition);
-  }
-  .menu-border::after {
-    content: "";
-    background-color: var(--OCEAN);
-    width: 100%;
-    height: 4px;
-    bottom: -4px;
-    left: 0px;
-    border-radius: 2px;
-    position: absolute;
-  }
-
-  .menu-item:focus,
-  .menu-item:hover {
-    color: var(--OCEAN);
-    transition: var(--transition);
   }
 
   .flex-header {
@@ -1360,36 +1338,10 @@ ul {
     margin-left: auto;
   }
 
-  .address-item {
-    color: var(--SLATE);
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.5;
-    letter-spacing: 0.32px;
-    transition: var(--transition);
-  }
-
   .address-item:focus,
   .address-item:hover {
     color: var(--OCEAN);
     transition: var(--transition);
-  }
-
-  /* -------------SEKCJA 1---------------- */
-  .section-background {
-    background-image: linear-gradient(
-        to bottom,
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(/goit-markup-hw-04/images/people-office.jpg);
-    background-size: cover;
-    max-width: 1440px;
-    height: 600px;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 188px 0;
-    margin: 0 auto;
   }
 
   .title-style {
@@ -1407,17 +1359,6 @@ ul {
     flex-direction: column;
   }
 
-  .btn-color {
-    background-color: var(--IRIS);
-    color: var(--WHITE);
-    /* Button Text */
-    font-family: var(--font-primary);
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.64px;
-    cursor: pointer;
-    transition: var(--transition2);
-  }
   .btn-flex {
     display: block;
     min-width: 169px;
@@ -1427,21 +1368,7 @@ ul {
     margin: 0 auto;
   }
 
-  .btn-color:hover,
-  .btn-color:focus {
-    background-color: var(--OCEAN);
-    transition: var(--transition2);
-  }
-
-  .btn-text {
-    color: var(--WHITE);
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.64px;
-  }
-
   .header-small-text {
-    color: var(--NAVY-BLUE);
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
@@ -1450,7 +1377,6 @@ ul {
     margin-bottom: 8px;
   }
   .small-text {
-    color: var(--SLATE);
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.32px;
@@ -1478,9 +1404,7 @@ ul {
     gap: 24px;
   }
   .section-title {
-    color: var(--NAVY-BLUE);
     text-align: center;
-    /* text style */
     font-size: 36px;
     font-weight: 700;
     line-height: 1.11;
@@ -1527,22 +1451,7 @@ ul {
     height: 40px;
     gap: 24px;
   }
-  .team-icon-link {
-    width: 100%;
-    height: 100%;
-    background-color: var(--IRIS);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: var(--transition2);
-  }
 
-  .team-icon-link:hover,
-  .team-icon-link:focus {
-    background-color: var(--OCEAN);
-    transition: var(--transition2);
-  }
   .team-svg {
     fill: var(--CLOUD);
   }
@@ -1562,172 +1471,14 @@ ul {
     padding: 0;
   }
 
-  .cstmr-list {
-    width: calc((100% - 120px) / 6);
-    height: 88px;
-  }
-
-  .cstmr-logo-style {
-    border: 1px solid var(--LIGHT-SLATE);
-    border-radius: 4px;
-    color: var(--LIGHT-SLATE);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    transition: var(--transition3), var(--transition);
-  }
-
-  .cstmr-logo-style:hover,
-  .cstmr-logo-style:focus {
-    border-color: var(--OCEAN);
-    color: var(--OCEAN);
-    transition: var(--transition3), var(--transition);
-  }
-
-  .customers-logo {
-    fill: currentColor;
-  }
   /*---------------------FOOTER-------------------*/
-  .footer-position {
-    display: flex;
-    align-items: baseline;
-  }
-
-  .footer-background {
-    background: var(--GREY);
-    padding: 100px 0;
-  }
-
-  .footer-item {
-    color: var(--IRIS);
-    font-family: var(--font-secondary);
-    font-size: 18px;
-    font-weight: 800;
-    line-height: 1.17;
-    letter-spacing: 0.54px;
-    text-transform: uppercase;
-    text-decoration: none;
-    margin-bottom: 16px;
-    display: inline-block;
-  }
-
-  .footer-text {
-    color: var(--CLOUD);
-    font-weight: 400;
-    line-height: 1.5;
-    letter-spacing: 0.32px;
-    max-width: 264px;
-  }
-
-  .footer-social-lists {
-    display: flex;
-    gap: 16px;
-  }
-
-  .social-text {
-    color: var(--WHITE);
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.32px;
-    margin-bottom: 16px;
-  }
-  .subscribe-form {
-    display: flex;
-    gap: 24px;
-  }
-
-  .subscribe-label {
-    display: flex;
-  }
-
-  .email-input {
-    color: var(--WHITE);
-    background-color: var(--NAVY-BLUE);
-    background-color: transparent;
-    font-size: 12px;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    gap: 24px;
-    width: 264px;
-    height: 40px;
-    padding: 8px 16px;
-    border-radius: 4px;
-    border: 1px solid var(--WHITE);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  }
-
-  .btn-subscribe {
-    min-width: 165px;
-    height: 40px;
-    border-style: none;
-    border-radius: 4px;
-    display: inline-flex;
-    padding: 8px 24px;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--IRIS);
-    color: var(--WHITE);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.64px;
-    cursor: pointer;
-    transition: var(--transition2);
-    fill: var(--WHITE);
-  }
-  .btn-subscribe:hover,
-  .btn-subscribe:focus {
-    background-color: var(--OCEAN);
-  }
-  .subscribe-svg {
-    margin-left: 16px;
-  }
-
-  .icons-item-footer {
-    height: 40px;
-    width: 40px;
-  }
-  .icon-link-footer {
-    width: 100%;
-    height: 100%;
-    background-color: var(--IRIS);
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: var(--transition2);
-  }
-  .icon-link-footer:hover,
-  .icon-link-footer:focus {
-    background-color: var(--GREEN);
-    transition: var(--transition2);
-  }
-
-  .footer-svg {
-    fill: var(--CLOUD);
-  }
-
-  .logo-size {
-    width: 104px;
-    height: 56px;
-  }
 
   .footer-subscribe {
-    padding-left: 80px;
+    margin-left: auto;
   }
-
-  .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+  .footer-logo-position {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
