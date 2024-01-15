@@ -69,6 +69,12 @@ ul {
     flex-direction: column;
     gap: 12px;
   }
+
+  .header-floor {
+    padding: 5px 0;
+  }
+}
+@media screen and (min-width: 320px) {
   .title-style {
     color: var(--WHITE);
     text-align: center;
@@ -77,10 +83,7 @@ ul {
     font-weight: 700;
     line-height: 1.11;
     letter-spacing: 0.72px;
-  }
-
-  .header-floor {
-    padding: 5px 0;
+    padding-bottom: 72px;
   }
 }
 
@@ -98,12 +101,17 @@ ul {
   .header-logo {
     color: var(--NAVY-BLUE);
   }
+
   .container {
     max-width: 428px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .position {
+    max-width: 400px;
   }
   /* --------------NAGŁOWEK-------------  */
 
@@ -210,10 +218,6 @@ ul {
         ),
         url(/goit-markup-hw-07/images/people@x2.jpg);
     }
-  }
-
-  .position {
-    flex-direction: column;
   }
 
   .btn-color {
@@ -1124,6 +1128,17 @@ ul {
     display: none;
   }
   /* ======================== HEADER =========================*/
+
+  .title-style {
+    text-align: center;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.07;
+    letter-spacing: 1.12px;
+    max-width: 496px;
+    margin: auto;
+    padding-bottom: 48px;
+  }
 
   /* ========================  SEKCJA 2  =========================*/
   .section-two {
