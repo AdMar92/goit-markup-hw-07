@@ -323,13 +323,11 @@ ul {
 
   .name-position {
     text-align: center;
-    padding: 8px;
   }
   .team-icons-flex {
     display: flex;
     justify-content: center;
     gap: 24px;
-    padding-top: 8px;
   }
   .team-icon {
     width: 40px;
@@ -1182,6 +1180,7 @@ ul {
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.4px;
+    margin-bottom: 8px;
   }
   .small-text-team {
     font-size: 16px;
@@ -1444,7 +1443,6 @@ ul {
     display: flex;
     justify-content: center;
     gap: 24px;
-    padding-top: 8px;
   }
   .team-icon {
     width: 40px;
