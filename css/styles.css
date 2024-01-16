@@ -452,6 +452,15 @@ ul {
   transition: var(--transition);
 }
 
+.header-small-portf {
+  color: var(--NAVY-BLUE);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.4px;
+}
+
 .pics-name {
   padding: 32px 16px;
   border: 1px solid var(--CORNFLOWER);
@@ -1059,6 +1068,16 @@ ul {
   .icons-item-mobile:focus {
     background-color: var(--GREEN);
   }
+  /* ==========================PORTFOLIO ======================== */
+  .pics-list {
+    width: 100%;
+  }
+  .btn-items {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 72px;
+    justify-content: flex-start;
+  }
 }
 /* ========================== TABLET 👇 ======================== */
 @media screen and (min-width: 768px) {
@@ -1144,6 +1163,10 @@ ul {
     padding: 0 96px;
   }
 
+  .pics-list {
+    width: 356px;
+  }
+
   /* ======================== FOOTER =========================*/
   .footer-logo-position {
     margin: auto;
@@ -1202,6 +1225,8 @@ ul {
   }
   .title-style {
     padding-bottom: 48px;
+  }
+  .section-background {
   }
 
   .address-item {
