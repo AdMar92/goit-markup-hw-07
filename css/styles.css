@@ -1270,13 +1270,6 @@ ul {
     display: flex;
     gap: 40px;
   }
-
-  .address-item:focus,
-  .address-item:hover {
-    color: var(--OCEAN);
-    transition: var(--transition);
-  }
-
   .position {
     flex-direction: column;
   }
@@ -1286,13 +1279,10 @@ ul {
     font-weight: 500;
   }
 
-  /* ----------------SEKCJA 2-------------------------- */
-
   .service-item {
     width: calc((100% - 72px) / 4);
   }
 
-  /*--------- -------SEKCJA 3------------- */
   .section-three {
     padding-bottom: 120px;
   }
@@ -1304,14 +1294,7 @@ ul {
     padding-left: 0;
   }
 
-  /* ------------------SEKCJA 4-------------------*/
-
   .team-list {
-    background-color: var(--WHITE);
-    border-radius: 0px 0px 4px 4px;
-    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
-      0px 1px 1px 0px rgba(46, 47, 66, 0.16),
-      0px 1px 6px 0px rgba(46, 47, 66, 0.08);
     width: calc((100% - 48px) / 3);
   }
 
