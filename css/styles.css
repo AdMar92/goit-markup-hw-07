@@ -1226,7 +1226,9 @@ ul {
   .title-style {
     padding-bottom: 48px;
   }
-  .section-background {
+
+  .small-text {
+    font-weight: 400;
   }
 
   .address-item {
