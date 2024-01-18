@@ -1108,6 +1108,11 @@ ul {
     letter-spacing: 0.48px;
   }
 
+  .section-background {
+    height: 436px;
+    background-size: auto;
+  }
+
   /* ========================  SEKCJA 2  =========================*/
 
   .section-two {
@@ -1231,6 +1236,12 @@ ul {
 
   .small-text {
     font-weight: 400;
+  }
+
+  .section-background {
+    height: 600px;
+    padding: 188px 0;
+    background-size: auto;
   }
 
   .address-item {
